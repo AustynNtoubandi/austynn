@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #d7d7d7;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #000000, #4a4a4a);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Header Styling */
+header h1 {
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Navbar */
+.navbar {
+    background: #333;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #6a11cb;
+}
+
+/* Sections */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#about img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+}
+
+.portfolio-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Portfolio Image Styling */
+.portfolio-item img {
+    width: auto; /* Breedte past zich aan de originele verhoudingen aan */
+    height: 200px; /* Zorgt voor consistente hoogte */
+    display: block; /* Verwijdert extra ruimte onder de afbeelding */
+    margin: 0 auto; /* Centreert de afbeelding horizontaal */
+    max-width: 100%; /* Zorgt ervoor dat de afbeelding niet uit de container springt */
+    
+}
+
+
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #6a11cb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) { /* Breedtes kleiner dan 768px */
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* Eén kolom op smalle schermen */
+    }
+
+    .portfolio-item img {
+        width: 100%; /* Vul de beschikbare ruimte */
+        height: auto; /* Behoudt originele verhouding */
+    }
+}
