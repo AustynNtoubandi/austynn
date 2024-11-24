@@ -30,7 +30,6 @@ header h1 {
     text-align: center;
 }
 
-
 header p {
     font-size: 1.2rem;
     margin-top: 0.5rem;
@@ -72,7 +71,7 @@ header p {
     max-width: 1100px;
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
-    padding-bottom: 3rem; /* Hoogte van de footer */
+    padding-bottom: 3rem; /* Voegt ruimte toe onderaan voor de sticky footer */
 }
 
 #about img {
@@ -96,13 +95,6 @@ header p {
     display: block; /* Verwijdert extra ruimte onder de afbeelding */
     margin: 0 auto; /* Centreert de afbeelding horizontaal */
     max-width: 100%; /* Zorgt ervoor dat de afbeelding niet uit de container springt */
-    
-}
-
-
-
-.portfolio-item img {
-    max-width: 100%;
     border-radius: 5px;
 }
 
@@ -122,14 +114,6 @@ header p {
 
 /* Footer */
 footer {
-    text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-
-footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -137,6 +121,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+    height: 3rem; /* Zorgt voor consistente hoogte */
 }
 
 @media (max-width: 768px) { /* Breedtes kleiner dan 768px */
