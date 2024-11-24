@@ -72,6 +72,7 @@ header p {
     max-width: 1100px;
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 3rem; /* Hoogte van de footer */
 }
 
 #about img {
